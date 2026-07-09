@@ -48,3 +48,12 @@ def list_histories_by_user(
         .limit(limit)
         .all()
     )
+
+
+def get_history_by_id(db: Session, history_id: int) -> History | None:
+    return db.query(History).filter(History.id == history_id).first()
+
+
+def delete_history(db: Session, history: History) -> None:
+    db.delete(history)
+    db.commit()
