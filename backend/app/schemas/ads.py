@@ -54,7 +54,7 @@ class AdvertisementResponse(BaseModel):
 
 # --- 축 정의 (스타일 결정, 담당: 한의정) --------------------------------------
 class StylePreset(str, Enum):
-    """스타일 = 문구 톤·색상 + 배경 무드.
+    """스타일 = 문구 톤·색상 + 배경 무드. 6종 확정 (2026-07-03, Issue #25).
 
     명칭은 프론트 버튼·명세서(BR-04)와 연동 — 변경 시 팀 공유 필수.
     """
@@ -62,7 +62,6 @@ class StylePreset(str, Enum):
     WARM_VINTAGE = "warm_vintage"  # 웜빈티지 — 카페·원목·골든아워
     POP = "pop"                    # 팝 — 고채도 팝아트
     EDITORIAL = "editorial"        # 에디토리얼 — 단색 배경·스튜디오 럭셔리
-    REALISM = "realism"            # 리얼리즘 — 자연광·실제 질감 중심
     RETRO_PAPER = "retro_paper"    # 레트로 페이퍼 — 아이보리 종이·스크린프린트
     PASTEL_FLOAT = "pastel_float"  # 파스텔 플로팅 — 파스텔·부유 소재·몽환
 

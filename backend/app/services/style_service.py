@@ -57,11 +57,8 @@ def _decide_from_text(free_text: str) -> StyleResponse:
     text = free_text.lower()
     if "빈티지" in free_text or "카페" in free_text or "vintage" in text:
         preset = StylePreset.WARM_VINTAGE
-    elif "내추럴" in free_text or "자연" in free_text or "리얼" in free_text or \
-            "natural" in text or "realism" in text:
-        preset = StylePreset.REALISM
     elif "레트로" in free_text or "복고" in free_text or "포스터" in free_text or "retro" in text:
-        preset = StylePreset.PASTEL_FLOAT
+        preset = StylePreset.RETRO_PAPER
     elif "럭셔리" in free_text or "고급" in free_text or "프리미엄" in free_text or \
             "luxury" in text or "editorial" in text:
         preset = StylePreset.EDITORIAL
