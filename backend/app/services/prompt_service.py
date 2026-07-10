@@ -89,6 +89,17 @@ _STYLE_KEYWORDS: dict[StylePreset, dict[str, str]] = {
             "patterns, gradients, busy background"
         ),
     },
+    StylePreset.REALISM: {
+        "positive": (
+            "photorealistic premium studio product photograph, true-to-life natural "
+            "surface texture, soft natural light, clean gradient background, realistic "
+            "color, sharp macro detail, appetizing and honest product look"
+        ),
+        "negative": (
+            "CGI, 3d render, plastic texture, fake food texture, cartoon, "
+            "overly glossy, uniform color, distorted product shape, cluttered background"
+        ),
+    },
     # ⚠️ 'poster/print' 류 메타 단어 금지 — SDXL 이 액자 속 포스터를 그려버림 (QUA-007 실측)
     StylePreset.RETRO_PAPER: {
         "positive": (
